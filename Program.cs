@@ -154,20 +154,20 @@ namespace log_ws
                         {
                             _clients.TryAdd(s, webSocket);
                         }
-                        else
-                        {
-                            foreach (var kv in _clients)
-                            {
-                                if (kv.Value.State == WebSocketState.Open)
-                                {
-                                    try
-                                    {
-                                        await kv.Value.SendAsync(new ArraySegment<byte>(sendBuf, 0, sendBuf.Length), WebSocketMessageType.Text, receiveResult.EndOfMessage, CancellationToken.None);
-                                    }
-                                    catch { }
-                                }
-                            }
-                        }
+                        //else
+                        //{
+                        //    foreach (var kv in _clients)
+                        //    {
+                        //        if (kv.Value.State == WebSocketState.Open)
+                        //        {
+                        //            try
+                        //            {
+                        //                await kv.Value.SendAsync(new ArraySegment<byte>(sendBuf, 0, sendBuf.Length), WebSocketMessageType.Text, receiveResult.EndOfMessage, CancellationToken.None);
+                        //            }
+                        //            catch { }
+                        //        }
+                        //    }
+                        //}
                     }
 
                     //////////////////////////// Otherwise we must have received binary data. Send it back by calling `SendAsync`. Note the use of the `EndOfMessage` flag on the receive result. This
