@@ -9,3 +9,10 @@ obj/Debug/log_ws.csproj.CoreCompileInputs.cache
 .vs/log_ws/v15/Server/sqlite3/storage.ide
 .vs/log_ws/v15/Server/sqlite3/db.lock
 .vs/log_ws/v15/.suo
+Run/log_ws.pdb
+Run/log_ws.vshost.exe
+Run/log_ws.vshost.exe.manifest
+.vs/Fleck2/v14/.suo
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/Fleck2.csproj.FileListAbsolute.txt
+obj/Debug/Fleck2.csprojResolveAssemblyReference.cache
